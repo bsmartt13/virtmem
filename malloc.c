@@ -80,7 +80,7 @@ void * mem_alloc (size_t length) {
   return NULL; /* no large enough free blocks */
 }
 
-/* Merge any adjacent free blocks in mem_list
+/* Merge any adjacent free blocks in mem_list */
 void merge_adj_blocks(){
 
  struct list_elem *e;
@@ -105,7 +105,7 @@ void merge_adj_blocks(){
     }
   }
 }
-*/
+
 
 /* Compare two list_elems by their address in memory	*/
 /* true if a is less than b, false if a is equal    	*/
